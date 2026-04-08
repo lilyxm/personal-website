@@ -31,6 +31,29 @@
     color: white;
 }
 
+.timeline-project-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+
+.timeline-link {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #5000ca;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    transition: background-color 0.2s ease;
+    
+    &:hover {
+        background-color: #3a0099;
+        text-decoration: none;
+    }
+}
+
 @media screen and (max-width: 1170px) {
     .vertical-timeline-element .vertical-timeline-element-date {
         color: rgb(39, 40, 34);

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import '@fortawesome/free-regular-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBriefcase } from '@fortawesome/free-solid-svg-icons';
@@ -16,15 +17,18 @@ function Timeline() {
             className="vertical-timeline-element--work"
             contentStyle={{ background: 'white', color: 'rgb(39, 40, 34)' }}
             contentArrowStyle={{ borderRight: '7px solid  white' }}
-            date="2022 - present"
+            date="Jan 2026 - Present"
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Technology Consultant</h3>
-            <h4 className="vertical-timeline-element-subtitle">Dallas, TX</h4>
+            <h3 className="vertical-timeline-element-title">Web Developer Co-Op</h3>
+            <h4 className="vertical-timeline-element-subtitle">Missasauga, ON, CAN</h4>
             <p>
-              Full-stack Web Development, GenAI/LLM, Project Management, Business Development
+              Test Automation, DevOps, Frontend Development
             </p>
+            <div className="timeline-project-links">
+              <Link to="/project/survalent" className="timeline-link">Artifacts</Link>
+            </div>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
@@ -37,6 +41,10 @@ function Timeline() {
             <p>
               Frontend Development, Backend Development, User Experience, Team Leading
             </p>
+            <div className="timeline-project-links">
+              <Link to="/project/datum" className="timeline-link">Datum Project →</Link>
+              <Link to="/project/wemanage" className="timeline-link">WeManage Project →</Link>
+            </div>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
@@ -49,6 +57,9 @@ function Timeline() {
             <p>
               Full-stack Development, API Development, User Experience
             </p>
+            <div className="timeline-project-links">
+              <Link to="/project/covid-dashboard" className="timeline-link">COVID Dashboard Project →</Link>
+            </div>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
@@ -61,6 +72,9 @@ function Timeline() {
             <p>
               Automation, Data Governance, Statistical Analysis
             </p>
+            <div className="timeline-project-links">
+              <Link to="/project/regression-analysis" className="timeline-link">Regression Analysis Project →</Link>
+            </div>
           </VerticalTimelineElement>
         </VerticalTimeline>
       </div>

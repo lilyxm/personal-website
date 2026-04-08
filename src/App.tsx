@@ -1,14 +1,8 @@
 import React, {useState, useEffect} from "react";
-import {
-  Main,
-  Timeline,
-  Expertise,
-  Project,
-  Contact,
-  Navigation,
-  Footer,
-} from "./components";
-import FadeIn from './components/FadeIn';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Navigation } from "./components";
+import HomePage from './pages/HomePage';
+import ProjectDetail from './pages/ProjectDetail';
 import './index.scss';
 
 function App() {
@@ -27,17 +21,15 @@ function App() {
       }, []);
 
     return (
-    <div className={`main-container ${mode === 'dark' ? 'dark-mode' : 'light-mode'}`}>
-        <Navigation parentToChild={{mode}} modeChange={handleModeChange}/>
-        <FadeIn transitionDuration={700}>
-            <Main/>
-            <Expertise/>
-            <Timeline/>
-            <Project/>
-            <Contact/>
-        </FadeIn>
-        <Footer />
-    </div>
+    <Router>
+      <div className={`main-container ${mode === 'dark' ? 'dark-mode' : 'light-mode'}`}>
+          <Navigation parentToChild={{mode}} modeChange={handleModeChange}/>
+          <Routes>
+              <Route path="/" element={<HomePage />} />
+              <Route path="/project/:projectId" element={<ProjectDetail />} />
+          </Routes>
+      </div>
+    </Router>
     );
 }
 

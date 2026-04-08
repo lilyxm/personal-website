@@ -1,0 +1,117 @@
+{
+    "survalent":{
+    "id": "survalent",
+    "title": "Survalent Technology",
+    "images": ["survalent.png", "mock01.png", "mock01.png"],
+    "paragraphs": [
+      "Survalent Technology is a leading provider of advanced SCADA and distribution automation solutions for utilities worldwide. As a Web Developer Co-Op, I contributed to the development of web-based applications that enhance the functionality and user experience of Survalent's products.",
+      "My responsibilities included implementing test automation frameworks, optimizing DevOps processes, and developing frontend features using modern web technologies. I collaborated closely with cross-functional teams to ensure seamless integration of new features and maintain high-quality standards across all projects.",
+      "During my tenure at Survalent, I gained valuable experience in full-stack web development, project management, and the application of GenAI/LLM technologies in real-world scenarios. This role allowed me to contribute to impactful projects while honing my technical skills in a dynamic and innovative environment."
+    ],
+    "link": "https://www.survalent.com/",
+    "technologies": ["JavaScript", "React", "Node.js","HTML/CSS", "Playwright"]
+
+    },
+  "filmate-ai": {
+    "id": "filmate-ai",
+    "title": "Filmate AI",
+    "images": ["mock10.png", "mock10.png", "mock10.png"],
+    "paragraphs": [
+      "Filmate AI is an intelligent movie recommendation platform that leverages semantic search and sentiment analysis to help users discover films that match their preferences. The application combines cutting-edge AI technologies with a user-friendly interface.",
+      "Filmate AI is an intelligent movie recommendation platform that leverages semantic search and sentiment analysis to help users discover films that match their preferences. The application combines cutting-edge AI technologies with a user-friendly interface.",
+      "Filmate AI is an intelligent movie recommendation platform that leverages semantic search and sentiment analysis to help users discover films that match their preferences. The application combines cutting-edge AI technologies with a user-friendly interface."
+    ],
+    "link": "https://www.filmate.club/",
+    "technologies": ["React", "Flask", "OpenAI GPT-3.5 Turbo", "Qdrant", "Python", "JavaScript"]
+  },
+  "high-speed-chase": {
+    "id": "high-speed-chase",
+    "title": "High Speed Chase",
+    "images": ["mock09.png", "mock09.png", "mock09.png"],
+    "paragraphs": [
+      "High Speed Chase is a 3D multiplayer racing game that delivers an exhilarating gaming experience. Developed with Unity and C#, the game features competitive racing mechanics and has been published on Itch.io."
+    ],
+    "link": "https://yujisatojr.itch.io/highspeedchase",
+    "technologies": ["Unity", "C#", "Game Development", "3D Graphics", "Multiplayer"]
+  },
+  "astro-raiders": {
+    "id": "astro-raiders",
+    "title": "Astro Raiders",
+    "images": ["mock08.png"],
+    "paragraphs": [
+      "Astro Raiders is a classic 2D shooting game built with Unity and C#. The game features engaging gameplay mechanics and has been released on Itch.io for the global gaming community."
+    ],
+    "link": "https://yujisatojr.itch.io/spacecraft",
+    "technologies": ["Unity", "C#", "Game Development", "2D Graphics", "Physics Engine"]
+  },
+  "datum": {
+    "id": "datum",
+    "title": "Datum: Integrated Learning Platform",
+    "images": ["mock07.png"],
+    "paragraphs": [
+      "Datum is a comprehensive online learning platform specializing in data science education in Japanese. The platform was built entirely from scratch using Ruby on Rails, featuring a complete backend infrastructure and interactive learning components."
+    ],
+    "link": "https://www.datumlearn.com/",
+    "technologies": ["Ruby on Rails", "PostgreSQL", "JavaScript", "HTML/CSS", "Web Development"]
+  },
+  "wemanage": {
+    "id": "wemanage",
+    "title": "WeManage: Real Estate Asset Management",
+    "images": ["mock06.png"],
+    "paragraphs": [
+      "WeManage is a sophisticated mobile application designed for professional real estate agents in Japan. It provides secure property management, financial forecasting, and income prediction capabilities."
+    ],
+    "link": "http://www.wemanage.jp/",
+    "technologies": ["Ruby on Rails", "JavaScript", "Mobile Development", "PostgreSQL", "Financial Analytics"]
+  },
+  "covid-dashboard": {
+    "id": "covid-dashboard",
+    "title": "COVID-19 Case Management",
+    "images": ["mock05.png"],
+    "paragraphs": [
+      "This COVID-19 dashboard was built to provide real-time tracking of cases and vaccination rates for university leadership. The application integrates with Google Sheets API for data management and displays comprehensive analytics."
+    ],
+    "link": "https://www.byuh.edu/covid-19-case-management",
+    "technologies": ["JavaScript", "Google Sheets API v4", "Data Visualization", "Charts.js", "HTML/CSS"]
+  },
+  "regression-analysis": {
+    "id": "regression-analysis",
+    "title": "Multiple Regression Property Analysis",
+    "images": ["mock04.png"],
+    "paragraphs": [
+      "This data science project performs comprehensive analysis of the Japanese real estate market using statistical modeling techniques. It predicts property prices using ordinary least squares (OLS) regression and multiple regression analysis."
+    ],
+    "link": "https://github.com/yujisatojr/multi-reg-analysis",
+    "technologies": ["Python", "Pandas", "NumPy", "Matplotlib", "Scikit-Learn", "Data Analysis", "Statistics"]
+  },
+  "programs-of-study": {
+    "id": "programs-of-study",
+    "title": "Programs of Study",
+    "images": ["mock03.png"],
+    "paragraphs": [
+      "This project involved creating a custom component for a CMS-based platform that helps university students discover and explore academic programs. It was built using Java backend with Handlebars templating and LESS styling."
+    ],
+    "link": "https://holokai.byuh.edu/programs-of-study",
+    "technologies": ["Java", "Handlebars", "LESS", "CMS Development", "Web Development"]
+  },
+  "transfer-evaluation": {
+    "id": "transfer-evaluation",
+    "title": "Transfer Evaluation Matrix",
+    "images": ["mock02.png"],
+    "paragraphs": [
+      "This interactive tool assists transfer students in understanding which of their credits will transfer to the university. It features an advanced CSV table generator built with Java and Handlebars templating."
+    ],
+    "link": "https://hookele.byuh.edu/transfer-evaluation-guidelines-and-matrix",
+    "technologies": ["Java", "Handlebars", "LESS", "CSV Processing", "Interactive Tools"]
+  },
+  "submeowrine": {
+    "id": "submeowrine",
+    "title": "Submeowrine",
+    "images": ["mock01.png"],
+    "paragraphs": [
+      "Submeowrine is a 2D shooting game developed for Android devices. It showcases mobile game development capabilities using Java and Android Studio, delivering an engaging user experience on mobile platforms."
+    ],
+    "link": "https://github.com/yujisatojr/submeowrine",
+    "technologies": ["Java", "Android Studio", "Android Development", "2D Graphics", "Mobile Gaming"]
+  }
+}

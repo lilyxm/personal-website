@@ -30,6 +30,180 @@
     transform: scale(1.05);
 }
 
+// Project Detail Page Styles - Card based layout
+.project-detail-container {
+    padding: 5% 10%;
+    min-height: 80vh;
+}
+
+.back-button {
+    background: none;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.2s ease;
+    
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+}
+
+.dark-mode .back-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.project-detail {
+    background: white;
+    color: rgb(39, 40, 34);
+    border-radius: 8px;
+    padding: 3rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.dark-mode .project-detail {
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+}
+
+.project-hero-image {
+    width: 100%;
+    border-radius: 8px;
+    max-height: 300px;
+    object-fit: cover;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.project-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    
+    h1 {
+        font-size: 2rem;
+        margin: 0;
+        color: rgb(39, 40, 34);
+    }
+    
+    h2 {
+        font-size: 1.2rem;
+        margin: 0;
+        color: rgb(39, 40, 34);
+        margin-top: 1.5rem;
+    }
+}
+
+.dark-mode .project-content h1,
+.dark-mode .project-content h2 {
+    color: #fff;
+}
+
+.project-links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    
+    .project-link {
+        display: inline-block;
+        padding: 0.75rem 1.5rem;
+        background-color: #5000ca;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.2s ease;
+        
+        &:hover {
+            background-color: #3a0099;
+        }
+    }
+}
+
+.project-external-link {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #5000ca;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.2s ease;
+    margin-top: 1rem;
+    
+    &:hover {
+        background-color: #3a0099;
+    }
+}
+
+.project-section {
+    padding: 1.5rem 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    
+    p {
+        line-height: 1.6;
+        font-size: 1rem;
+        color: rgb(39, 40, 34);
+        margin: 0;
+    }
+}
+
+.dark-mode .project-section {
+    border-top-color: rgba(255, 255, 255, 0.1);
+    
+    p {
+        color: #e0e0e0;
+    }
+}
+
+.project-section .chip {
+    color: rgb(39, 40, 34) !important;
+    background-color: white !important;
+    font-size: 0.8rem !important;
+    height: 25px !important;
+
+    span {
+        font-family: 'Courier Prime', monospace;
+        color: rgb(39, 40, 34);
+    }
+
+    svg {
+        height: 15px !important;
+    }
+}
+
+.project-section .flex-chips {
+    line-height: 2;
+    margin: 0.5;
+
+    .chip-title {
+        color: rgb(39, 40, 34);
+        padding-right: 10px;
+    }
+}
+
+.project-section .flex-chips .MuiChip-root {
+    margin-right: 0.5em;
+}
+
+.project-section .flex-chips .MuiChip-outlined {
+    background-color: #e0e0e0;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+        monospace;
+}
+
+.project-section .flex-chips .MuiChip-outlined span {
+    color: rgb(39, 40, 34);
+}
+
+.dark-mode .project-section .flex-chips .chip-title {
+    color: #e0e0e0;
+}
+
 @media screen {
     @media (max-width: 700px) {
         .projects-container {
@@ -44,6 +218,22 @@
       
         .projects-container .projects-grid .project {
             padding-bottom: 5%;
+        }
+        
+        .project-detail-container {
+            padding: 2rem 5%;
+        }
+        
+        .project-detail {
+            padding: 1.5rem;
+        }
+        
+        .project-content h1 {
+            font-size: 1.5rem;
+        }
+        
+        .project-hero-image {
+            max-height: 200px;
         }
     }
 }
