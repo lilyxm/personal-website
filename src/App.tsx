@@ -25,7 +25,7 @@ function App() {
       <div className={`main-container ${mode === 'dark' ? 'dark-mode' : 'light-mode'}`}>
           <Navigation parentToChild={{mode}} modeChange={handleModeChange}/>
           <Routes>
-              <Route path="/" element={<HomePage />} />
+              <Route path="/personal-website" element={<HomePage />} />
               <Route path="/project/:projectId" element={<ProjectDetail />} />
           </Routes>
       </div>
