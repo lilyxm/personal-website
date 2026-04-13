@@ -32,7 +32,7 @@ function ProjectDetail() {
   if (!projectId || !projectsData[projectId]) {
     return (
       <div className="project-detail-container">
-        <button className="back-button" onClick={() => navigate('/')}>
+        <button className="back-button" onClick={() => navigate('/personal-website')}>
           ← Back to Portfolio
         </button>
         <h1>Project Not Found</h1>
@@ -46,7 +46,7 @@ function ProjectDetail() {
 
   return (
     <div className="project-detail-container">
-      <button className="back-button" onClick={() => navigate('/')}>
+      <button className="back-button" onClick={() => navigate('/personal-website')}>
         ← Back to Portfolio
       </button>
       
