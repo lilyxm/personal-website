@@ -42,6 +42,10 @@ function getVideoMimeType(path: string) {
   }
 }
 
+function isImageFile(path: string) {
+  return /\.(png|jpe?g|gif|webp|bmp|svg)$/i.test(path);
+}
+
 const projectsData: Record<string, ProjectData> = Object.fromEntries(
   Object.entries(rawProjectsData).map(([key, project]) => [
     key,
@@ -100,17 +104,21 @@ function ProjectDetail() {
             return (
               <React.Fragment key={`${project.id}-section-${sectionIndex}`}>
                 {media &&
-                  (isVideoFile(media) ? (
-                    <video controls className="project-hero-video" preload="metadata">
-                      <source src={media} type={getVideoMimeType(media)} />
-                      Your browser does not support the video tag.
-                    </video>
-                  ) : (
+                  (isImageFile(media) ? (
                     <img
                       src={media}
                       alt={`${project.title} screenshot ${sectionIndex + 1}`}
                       className="project-hero-image"
                     />
+                  ) : (
+                    <a
+                      href={media}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="project-media-link"
+                    >
+                      OPEN VIDEO LINK
+                    </a>
                   ))}
 
                 {firstParagraph && (

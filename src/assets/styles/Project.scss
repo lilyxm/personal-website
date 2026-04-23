@@ -10,6 +10,21 @@
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 50px;
 }
+
+.project-media-link {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #5000ca;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.2s ease;
+    margin-right: 0.5rem;
+    
+    &:hover {
+        background-color: #3a0099;
+    }
+}
   
 .projects-container .projects-grid .project {
     text-align: left;
