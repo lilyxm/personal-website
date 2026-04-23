@@ -2,7 +2,7 @@
     "survalent":{
     "id": "survalent",
     "title": "Survalent Technology",
-    "images": ["survalent.png", "artifact1.webm", "mock01.png"],
+    "images": ["survalent.png", "https://youtu.be/fxUqjSiOuks", "test-graph.png"],
     "paragraphs": [
       "Survalent Technology is a leading provider of advanced SCADA and distribution automation solutions for utilities worldwide. My responsibilities included implementing test automation frameworks, optimizing DevOps processes, and developing frontend features using modern web technologies. I collaborated closely with cross-functional teams to ensure seamless integration of new features and maintain high-quality standards across all projects.",
       "The first artifact is a video demonstrating an automated drag-and-drop test that I implemented for the application. This test showcases how I simulated user interactions within the interface, specifically validating that drag-and-drop functionality behaved correctly under expected conditions. It highlights my ability to design end-to-end tests that go beyond simple input/output validation and instead replicate real user workflows, ensuring that key UI interactions function reliably."
