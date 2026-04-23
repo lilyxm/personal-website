@@ -8,7 +8,7 @@ function Footer() {
     <footer>
       <div>
         <a href="https://github.com/lilyxm" target="_blank" rel="noreferrer"><GitHubIcon/></a>
-        <a href="https://www.linkedin.com/in/yujisato/" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
+        <a href="https://www.linkedin.com/in/lilyxm/" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
       </div>
       <p>A portfolio designed & built by <a href="https://github.com/lilyxm/react-portfolio-template" target="_blank" rel="noreferrer">Lily Zhou</a> with 💜</p>
     </footer>

@@ -3,6 +3,7 @@ import Chip from '@mui/material/Chip';
 import { useParams, useNavigate } from 'react-router-dom';
 import rawProjectsData from '../data/projects.json';
 import '../assets/styles/Project.scss';
+import '../index.scss';
 
 const imageBasePath = `${process.env.PUBLIC_URL}/images`;
 
@@ -15,12 +16,38 @@ type ProjectData = {
   technologies: string[];
 };
 
+function resolveMediaPath(path: string) {
+  if (/^(https?:\/\/|\/)/i.test(path)) {
+    return path;
+  }
+
+  return `${imageBasePath}/${path}`;
+}
+
+function isVideoFile(path: string) {
+  return /\.(mp4|webm|ogg)$/i.test(path);
+}
+
+function getVideoMimeType(path: string) {
+  const ext = path.split('.').pop()?.toLowerCase();
+  switch (ext) {
+    case 'mp4':
+      return 'video/mp4';
+    case 'webm':
+      return 'video/webm';
+    case 'ogg':
+      return 'video/ogg';
+    default:
+      return 'video/mp4';
+  }
+}
+
 const projectsData: Record<string, ProjectData> = Object.fromEntries(
   Object.entries(rawProjectsData).map(([key, project]) => [
     key,
     {
       ...project,
-      images: project.images.map((image) => `${imageBasePath}/${image}`),
+      images: project.images.map((media) => resolveMediaPath(media)),
     },
   ])
 );
@@ -42,7 +69,10 @@ function ProjectDetail() {
   }
 
   const project = projectsData[projectId];
-  const totalSections = Math.max(project.images.length, project.paragraphs.length);
+  const totalSections = Math.max(
+    project.images.length,
+    Math.ceil(project.paragraphs.length / 2)
+  );
 
   return (
     <div className="project-detail-container">
@@ -53,33 +83,50 @@ function ProjectDetail() {
       <div className="project-detail">
         <div className="project-content">
           <h1>{project.title}</h1>
-           <section className="project-section">
+          <section className="project-section">
             <div className="flex-chips">
-              <span className="chip-title">Tech stack:</span>
+              <span className="chip-title">Tech Stack:</span>
               {project.technologies.map((tech: string) => (
                 <Chip key={tech} className='chip' label={tech} />
               ))}
             </div>
           </section>
 
-          {Array.from({ length: totalSections }).map((_, index) => (
-            <React.Fragment key={`${project.id}-section-${index}`}>
-              {project.images[index] && (
-                <img
-                  src={project.images[index]}
-                  alt={`${project.title} screenshot ${index + 1}`}
-                  className="project-hero-image"
-                />
-              )}
-              {project.paragraphs[index] && (
-                <section className="project-section">
-                  <p>{project.paragraphs[index]}</p>
-                </section>
-              )}
-            </React.Fragment>
-          ))}
+          {Array.from({ length: totalSections }).map((_, sectionIndex) => {
+            const media = project.images[sectionIndex];
+            const firstParagraph = project.paragraphs[sectionIndex * 2];
+            const secondParagraph = project.paragraphs[sectionIndex * 2 + 1];
 
-         
+            return (
+              <React.Fragment key={`${project.id}-section-${sectionIndex}`}>
+                {media &&
+                  (isVideoFile(media) ? (
+                    <video controls className="project-hero-video" preload="metadata">
+                      <source src={media} type={getVideoMimeType(media)} />
+                      Your browser does not support the video tag.
+                    </video>
+                  ) : (
+                    <img
+                      src={media}
+                      alt={`${project.title} screenshot ${sectionIndex + 1}`}
+                      className="project-hero-image"
+                    />
+                  ))}
+
+                {firstParagraph && (
+                  <section className="project-section">
+                    <p>{firstParagraph}</p>
+                  </section>
+                )}
+
+                {secondParagraph && (
+                  <section className="project-section">
+                    <p>{secondParagraph}</p>
+                  </section>
+                )}
+              </React.Fragment>
+            );
+          })}
 
           <div className="project-links">
             {project.link && (

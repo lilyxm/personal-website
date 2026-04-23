@@ -2,11 +2,13 @@
     "survalent":{
     "id": "survalent",
     "title": "Survalent Technology",
-    "images": ["survalent.png", "mock01.png", "mock01.png"],
+    "images": ["survalent.png", "artifact1.webm", "mock01.png"],
     "paragraphs": [
-      "Survalent Technology is a leading provider of advanced SCADA and distribution automation solutions for utilities worldwide. As a Web Developer Co-Op, I contributed to the development of web-based applications that enhance the functionality and user experience of Survalent's products.",
-      "My responsibilities included implementing test automation frameworks, optimizing DevOps processes, and developing frontend features using modern web technologies. I collaborated closely with cross-functional teams to ensure seamless integration of new features and maintain high-quality standards across all projects.",
-      "During my tenure at Survalent, I gained valuable experience in full-stack web development, project management, and the application of GenAI/LLM technologies in real-world scenarios. This role allowed me to contribute to impactful projects while honing my technical skills in a dynamic and innovative environment."
+      "Survalent Technology is a leading provider of advanced SCADA and distribution automation solutions for utilities worldwide. My responsibilities included implementing test automation frameworks, optimizing DevOps processes, and developing frontend features using modern web technologies. I collaborated closely with cross-functional teams to ensure seamless integration of new features and maintain high-quality standards across all projects.",
+      "The first artifact is a video demonstrating an automated drag-and-drop test that I implemented for the application. This test showcases how I simulated user interactions within the interface, specifically validating that drag-and-drop functionality behaved correctly under expected conditions. It highlights my ability to design end-to-end tests that go beyond simple input/output validation and instead replicate real user workflows, ensuring that key UI interactions function reliably."
+      ,"A key challenge in implementing this test was working with locators and ensuring that elements could be reliably targeted in a dynamic UI. In Playwright, drag-and-drop interactions often require more than default commands, especially when elements are rendered asynchronously or lack stable selectors. I had to create custom helper functions to handle cases where elements were not immediately available, as well as refine locator strategies using attributes, text content, and DOM structure to reduce flakiness. Additionally, timing issues, hidden elements, and overlapping UI layers could cause tests to fail intermittently, so I incorporated waits and validation checks to ensure stability. This process reinforced the importance of writing resilient tests that can handle real-world inconsistencies in frontend behavior."
+      ,"The second artifact is a screenshot of a pass/fail trend graph summarizing test results over the duration of my work term. This visualization demonstrates the progression and stability of the test suite, showing how test reliability improved over time as issues were identified and resolved. It reflects the broader impact of my testing efforts, providing insight into application quality and helping the team track regressions and overall system health."
+      ,"In addition to improving test stability, I significantly expanded overall test coverage by increasing the number of automated test steps from approximately 1,200 to around 2,100. This ensured that a much larger portion of the application’s functionality was consistently validated through automated testing. By covering these additional scenarios, I reduced the need for repetitive manual testing by QA, saving time and allowing them to focus on more complex exploratory and edge-case testing. This improvement not only increased efficiency but also contributed to more reliable and repeatable validation of the application over time."
     ],
     "link": "https://www.survalent.com/",
     "technologies": ["JavaScript", "React", "Node.js","HTML/CSS", "Playwright"]
@@ -81,7 +83,7 @@
     "paragraphs": [
       "This data science project performs comprehensive analysis of the Japanese real estate market using statistical modeling techniques. It predicts property prices using ordinary least squares (OLS) regression and multiple regression analysis."
     ],
-    "link": "https://github.com/yujisatojr/multi-reg-analysis",
+    "link": "https://github.com/lilyxm/multi-reg-analysis",
     "technologies": ["Python", "Pandas", "NumPy", "Matplotlib", "Scikit-Learn", "Data Analysis", "Statistics"]
   },
   "programs-of-study": {
@@ -111,7 +113,7 @@
     "paragraphs": [
       "Submeowrine is a 2D shooting game developed for Android devices. It showcases mobile game development capabilities using Java and Android Studio, delivering an engaging user experience on mobile platforms."
     ],
-    "link": "https://github.com/yujisatojr/submeowrine",
+    "link": "https://github.com/lilyxm/submeowrine",
     "technologies": ["Java", "Android Studio", "Android Development", "2D Graphics", "Mobile Gaming"]
   }
 }

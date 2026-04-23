@@ -10,9 +10,8 @@ const labelsFirst = [
     "TypeScript",
     "JavaScript",
     "HTML5",
-    "CSS3",
+    "CSS",
     "SASS",
-    "Flask",
     "Python",
     "SQL",
     "PostgreSQL",
@@ -26,19 +25,15 @@ const labelsSecond = [
     "AWS",
     "Azure",
     "Linux",
-    "Snowflake",
-    "Pandas",
-    "Selenium",
+    "Playwright",
+    "cypress",
 ];
 
 const labelsThird = [
     "OpenAI",
-    "Groq",
-    "LangChain",
-    "Qdrant",
-    "Hugging Face",
-    "LlamaIndex",
-    "Streamlit",
+    "Pandas",
+    "NumPy",
+    
 ];
 
 function Expertise() {
